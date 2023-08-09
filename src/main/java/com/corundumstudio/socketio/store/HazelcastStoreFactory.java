@@ -51,7 +51,6 @@ public class HazelcastStoreFactory extends BaseStoreFactory {
         this.hazelcastClient = hazelcastClient;
         this.hazelcastPub = hazelcastPub;
         this.hazelcastSub = hazelcastSub;
-
         this.pubSubStore = new HazelcastPubSubStore(hazelcastPub, hazelcastSub, getNodeId());
     }
 
